@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <h1>Meus Projetos:</h1>
+ <ul>
+ {% for projeto in projetos %}
+ <i><li>Meu Portfólio.</li></i>
+ <i><li>Minha ONG.</li></i>
+ {% endfor %}
+ </ul>
+
+ <a href='/inicio/'>Volte para o Início</a>
+{% endblock %}
