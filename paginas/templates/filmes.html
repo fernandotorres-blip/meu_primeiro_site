@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Meus Filmes:</h1>
+    <ul>
+        {% for item in filmes %}
+            <li class="cartao">
+                <h2><strong>{{ item.titulo }}</strong></h2>
+                <p><strong>Ano:</strong> {{ item.ano }}</p>
+                <p><strong>Gênero:</strong> {{ item.genero }}</p>
+                <p><strong>Nota:</strong> {{ item.nota }}</p>
+                <p><strong>Autor:</strong> {{ item.autor }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
